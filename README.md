@@ -112,6 +112,7 @@ A **pack** is how Gas City ships agents, formulas, and config as one installable
 Register your fork as the rig, then import the pack into it:
 
 ```bash
+cd factory
 export RIG_PATH="$HOME/factory-demo/actual-factory-demo"
 gc rig add "$RIG_PATH" --name ascii-art
 gc import add --rig ascii-art "$RIG_PATH/factory"
