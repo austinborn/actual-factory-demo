@@ -100,9 +100,9 @@ gc doctor       # ✓ pass, ⚠ warning, ✗ error
 The city and the rig live side by side. At this point your directory should look like this:
 
 ```text
-~/factory-demo/
-├── factory/              # the Gas City factory
-└── actual-factory-demo/   # your repo fork, which is also the rig
+cd .. && ls
+actual-factory-demo/   # your repo fork, which is also the rig
+factory/               # the Gas City factory
 ```
 
 ### 4. Install the pack
@@ -171,7 +171,7 @@ To watch the agents work, you can simply find a session you'd like to watch and 
 
 ```bash
 gc session list
-gc session attach <session-name>
+gc session attach <session-name> # example: gc session attach ascii-art/factory.planner-1
 ```
 
 **Note: detach with `Ctrl+b` then `d`.** Never `Ctrl+c`. That one kills the session outright, and you may need to restart the agent or city to resume work.
